@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Light blue background */
+            color: #333;
+        }
+        .dashboard-container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #ffffff; /* White card */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .profile-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #1e90ff; /* Blue border */
+            margin-right: 20px;
+        }
+        .user-details {
+            font-size: 18px;
+        }
+        .user-details h2 {
+            margin: 0;
+            color: #1e90ff; /* Blue text */
+        }
+        .user-details p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="profile-header">
+            <img src="profile-pic-placeholder.jpg" alt="User Profile Picture" class="profile-pic">
+            <div class="user-details">
+                <h2><%=Fullname%></h2>
+                <p>Email: <%= username%></p>
+                <p>Phone: <%= phone%></p>
+                <p>Location:<%= location%></p>
+            </div>
+        </div>
+        <div class="additional-info">
+            <h3>About</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
+        </div>
+    </div>
+</body>
+</html>
